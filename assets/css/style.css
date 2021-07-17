@@ -86,3 +86,11 @@
   color: black;
   box-shadow: 0 0 10px rgb(175, 166, 166);
 }
+
+.btn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
