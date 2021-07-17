@@ -1,7 +1,7 @@
-var yourForm = document.getElementById("search-form");
+var searchForm = document.getElementById("search-form");
 var searchInput = document.getElementById("search-input");
 
-yourForm.addEventListener("submit", function (event) {
+searchForm.addEventListener("submit", function (event) {
     event.defaultPrevented();
 
     var searchPhrase = searchInput.value;
