@@ -4,58 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RSV ENTERTAINMENT</title>
+    <title>BREAK TIME!</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body onload="getquote();">
     <section id="Title">
       <div id="Main"></div>
-      <h1 class="headings">RSV ENTERTAINMENT</h1>
+      <h1 class="headings">BREAK TIME!</h1>
     </section>
     <nav class="navbar">
       <ul>
-        <li><a href="#VIDEOS">VIDEOS</a></li>
-        <li><a href="#EVENTS">EVENTS</a></li>
+        <li><a href="#Quote">Your quote</a></li>
+        <li><a href="#Search">Search</a></li>
       </ul>
     </nav>
 
-    <!--Video section-->
+    <div>
+      <!--Quote section-->
 
-    <h2 class="searchtext">SEARCH YOUR VIDEO</h2>
-
-    <form id="search-form">
       <div class="row">
-        <!-- <label class="SEARCHBAR" id="searchdisplay">Search anything!</label>-->
-        <input
-          id="search-input"
-          type="text"
-          class="search-input"
-          placeholder="Search here"
-        />
-        <button id="btn" class="searchBtn">SEARCH</button>
+        <div id="text"></div>
+        <div id="creator"></div>
+        <button id="btn" class="CLICK" onclick="getquote();">
+          Get my random quote
+        </button>
       </div>
-    </form>
-    <!--
-    <h2 class="searchtext1">SEARCH events</h2>
-    <hr/>
-<form id="search-form1">
-    <div class="row">
-        <label class="SEARCHBAR1" id="searchdisplay1">Search anything!</label>
-       <input type="text1" class="search-input1" placeholder="Search here1" />
-        
-    
+
+      <!--Wikipedia-->
+      <div>
+        <p>Wikipedia</p>
+        <div>
+          <input
+            id="search-input"
+            type="text"
+            name="search"
+            placeholder="Search.."
+          />
+          <button id="search-form">Search</button>
+        </div>
+        <div class="container">
+          <h2>Results</h2>
+          <h2 id="search"></h2>
+          <div id="search-results"></div>
+        </div>
+      </div>
     </div>
-</form>
--->
-    <script src="assets/js/api.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script
-      async
-      defer
-      src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()"
-    ></script>
+
+    <script defer src="./assets/js/api.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </body>
 </html>

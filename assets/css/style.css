@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: rgb(230, 230, 224);
+}
 /* Title*/
 
 .Main {
@@ -11,18 +13,16 @@
   flex-direction: column;
   border: 1px solid white;
   align-items: center;
-  position: absolute;
   top: 30%;
   right: 10%;
+  background: black;
 }
 .headings {
-  font-family: fantasy;
+  font-family: "Times New Roman", Times, serif;
   background-color: rgb(230, 223, 223);
-
   font-size: 3rem;
   margin: 30px 0px;
   text-align: center;
-
   padding: 40px 40px;
 }
 /* NAVBAR */
@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(230, 223, 223);
   position: sticky;
   top: 0;
 }
@@ -40,7 +40,7 @@
   margin: 40px 10px;
 }
 .navbar ul li {
-  font-family: fantasy;
+  font-family: "Times New Roman", Times, serif;
   font-size: large;
   font-weight: bold;
 }
@@ -56,41 +56,64 @@
   box-shadow: 0 0 10px whitesmoke;
 }
 
-/* VIDEO SEARCH SECTION()*/
-.SEARCHBAR {
-  position: fixed;
-  height: 30px;
-  top: 400px;
-  left: 15px;
-}
-.searchtext {
-  font-family: fantasy;
-  font-size: 30px;
-  justify-content: left;
-  padding: 5px;
+/* QOUTE DISPLAY */
+
+.row {
+  flex-direction: column;
+  margin: 10px;
+  padding: 100px;
+  width: 80%;
+  border-radius: 20px;
   background-color: grey;
-  color: white;
 }
-.search-input {
-  position: absolute;
-  top: 400px;
-  left: 75px;
-  right: 75px;
-  height: 30px;
-  width: 1200px;
-  border-style: solid;
-  border-color: black;
+#text {
+  display: flex;
+  font-family: "Bradley Hand ITC";
+  text-align: center;
+  font-size: 20px;
 }
-.search-input:hover {
-  background-color: rgb(131, 110, 110);
-  color: black;
-  box-shadow: 0 0 10px rgb(175, 166, 166);
+#creator {
+  display: flex;
+  margin-top: 10px;
+  font-family: "Bradley Hand ITC";
+  font-size: 35px;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  border-radius: initial;
+  align-items: center;
+  height: 20px;
+  background-color: grey;
+  font-size: large;
+  font-weight: bold;
 }
 
-.btn {
+/* WIKIPEDIA SEARCH */
+
+.input[type="text"] {
+  width: 130px;
+  margin-top: 700px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+.btn1 {
+  display: auto;
+  top: 850px;
+  left: 75px;
+  right: 75px;
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #080808;
   color: white;
 }
