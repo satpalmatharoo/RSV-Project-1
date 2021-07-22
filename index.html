@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BREAK TIME!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body onload="getquote();">
-    <section id="Title">
-      <div id="Main"></div>
-      <h1 class="headings">BREAK TIME!</h1>
+    <section class="section is-small">
+      <h1 class="title is-1 has-text-centered">BREAK TIME!</h1>
     </section>
+
     <nav class="navbar">
       <ul>
         <li><a href="#Quote">Your quote</a></li>
@@ -32,9 +36,9 @@
       </div>
 
       <!--Wikipedia-->
-      <div>
-        <p>Wikipedia</p>
-        <div>
+      <div class="field">
+        <label class="label is-size-2 has-background-light">Wikipedia Search</label>
+        <div class="control"></div>
           <input
             id="search-input"
             type="text"
