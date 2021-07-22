@@ -9,7 +9,7 @@
 ## We love the apps ability to give the user the functionality of being selected at random, elevating the vistors experience via engagement.  This function will then be evolved with online excerise apps.
 
 ###
-* https://github.com/satpalmatharoo/RSV-Project-1
+* https://satpalmatharoo.github.io/RSV-Project-1/
 * Screenshot of deployed application
 https://github.com/satpalmatharoo/RSV-Project-1/issues/13#issue-951103943
 
