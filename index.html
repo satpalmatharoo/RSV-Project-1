@@ -4,53 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BREAK TIME!</title>
+    <title>RSV=GROUP-PROJECT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body onload="getquote();">
-    <section id="Title">
-      <div id="Main"></div>
-      <h1 class="headings">BREAK TIME!</h1>
+    <section class="section is-small">
+      <h1 class="title is-1 has-text-centered">RSV DAILY MOTIVATION!</h1>
     </section>
+
     <nav class="navbar">
       <ul>
         <li><a href="#Quote">Your quote</a></li>
         <li><a href="#Search">Search</a></li>
       </ul>
     </nav>
-
-    <div>
-      <!--Quote section-->
-
-      <div class="row">
-        <div id="text"></div>
-        <div id="creator"></div>
-        <button id="btn" class="CLICK" onclick="getquote();">
-          Get my random quote
-        </button>
+    <article class="message is-primary ">
+      <div class="message-header has-text-centered">
+        <p>SMILE!</p>
+      </div>
+      <div class="message-body has-text-centered"><strong>Energising each visitor with positivity to fuel the day ahead or reset the day!</strong>
       </div>
 
+        <img class="image" width="640" height="360" src="assets/Images/joshua-woroniecki--5nwt_aN2E0-unsplash.jpg" alt="Pic1"/>
+    </article>
+    <div>
+      
+      <!--Quote section-->
+      <section id="Quote">
+      <div class="container">
+        <div class="notification is-primary">
+          <div id="text"></div>
+          <div id="creator"></div>
+          <button
+            id="btn"
+            class="button is-warning is-outlined is-medium is-rounded"
+            onclick="getquote();"
+          >
+            Get my random quote
+          </button>
+        </div>
+      </div>
+    </section>
       <!--Wikipedia-->
-      <div>
-        <p>Wikipedia</p>
-        <div>
+
+      <section id="Search">
+      <div class="field">
+        <h2
+          class="
+            label
+            is-focused is-size-2
+            has-background-light has-text-centered
+          "
+        >
+          Wikipedia Search
+        </h2>
+        <div class="control">
           <input
+            class="input is-success is-hovered"
             id="search-input"
+            class="input"
             type="text"
             name="search"
             placeholder="Search.."
           />
-          <button id="search-form">Search</button>
         </div>
-        <div class="container">
-          <h2>Results</h2>
+        <button
+          class="button is-success is-outlined is-medium is-rounded"
+          id="search-form"
+        >
+          Search
+        </button>
+      </div>
+      <div class="container">
+        <div class="notification is-primary">
+          <h2><strong>Results</strong></h2>
           <h2 id="search"></h2>
           <div id="search-results"></div>
         </div>
       </div>
     </div>
-
+  </section>
+    <div>
+    <img class="image" width="1140" height="260" src="assets/Images/chang-duong-web.jpg" alt="Pic2"/>/div>
+  
     <script defer src="./assets/js/api.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </body>

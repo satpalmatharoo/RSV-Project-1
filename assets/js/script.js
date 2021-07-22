@@ -1,4 +1,5 @@
 var API_KEY = "6f42252eb8msh67e41ddac877ed0p1b148bjsn0467aff798de";
+var API_KEY = "3acbd305d4msh03e14d06885506fp122efcjsn2469dafac0e2";
 
 function getquote() {
   fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
@@ -35,7 +36,7 @@ searchForm.addEventListener("click", function (event) {
     {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "6f42252eb8msh67e41ddac877ed0p1b148bjsn0467aff798de",
+        "x-rapidapi-key": "3acbd305d4msh03e14d06885506fp122efcjsn2469dafac0e2",
         "x-rapidapi-host": "wiki-scraper.p.rapidapi.com",
       },
     }

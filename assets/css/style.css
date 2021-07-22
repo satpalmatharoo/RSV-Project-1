@@ -8,15 +8,6 @@ body {
 }
 /* Title*/
 
-.Main {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid white;
-  align-items: center;
-  top: 30%;
-  right: 10%;
-  background: black;
-}
 .headings {
   font-family: "Times New Roman", Times, serif;
   background-color: rgb(230, 223, 223);
@@ -46,14 +37,14 @@ body {
 }
 .navbar ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   padding: 8px 25px;
   transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
-  background-color: whitesmoke;
+  background-color: grey;
   color: black;
-  box-shadow: 0 0 10px whitesmoke;
+  box-shadow: 0 0 10px rgb(58, 53, 53);
 }
 
 /* QOUTE DISPLAY */
@@ -78,42 +69,8 @@ body {
   font-family: "Bradley Hand ITC";
   font-size: 35px;
 }
-#btn {
-  display: flex;
-  justify-content: center;
-  border-radius: initial;
-  align-items: center;
-  height: 20px;
-  background-color: grey;
-  font-size: large;
-  font-weight: bold;
-}
-
-/* WIKIPEDIA SEARCH */
-
-.input[type="text"] {
-  width: 130px;
-  margin-top: 700px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url("searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
-
-.btn1 {
-  display: auto;
-  top: 850px;
-  left: 75px;
-  right: 75px;
-  border-left: 1px solid black;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background-color: #080808;
-  color: white;
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
