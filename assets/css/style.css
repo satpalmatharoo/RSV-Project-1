@@ -69,6 +69,7 @@ body {
   font-family: "Bradley Hand ITC";
   font-size: 35px;
 }
+/*
 #btn {
   display: flex;
   justify-content: center;
@@ -79,20 +80,5 @@ body {
   font-size: large;
   font-weight: bold;
 }
-
+*/
 /* WIKIPEDIA SEARCH */
-
-.input[type="text"] {
-  width: 130px;
-  margin-top: 700px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url("searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
