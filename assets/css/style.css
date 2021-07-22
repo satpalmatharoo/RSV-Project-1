@@ -69,16 +69,8 @@ body {
   font-family: "Bradley Hand ITC";
   font-size: 35px;
 }
-/*
-#btn {
-  display: flex;
-  justify-content: center;
-  border-radius: initial;
-  align-items: center;
-  height: 20px;
-  background-color: grey;
-  font-size: large;
-  font-weight: bold;
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-*/
-/* WIKIPEDIA SEARCH */
