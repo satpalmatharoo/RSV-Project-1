@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BREAK TIME!</title>
+    <title>RSV=GROUP-PROJECT</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
@@ -14,7 +14,7 @@
   </head>
   <body onload="getquote();">
     <section class="section is-small">
-      <h1 class="title is-1 has-text-centered">BREAK TIME!</h1>
+      <h1 class="title is-1 has-text-centered">RSV DAILY MOTIVATION!</h1>
     </section>
 
     <nav class="navbar">
@@ -23,40 +23,71 @@
         <li><a href="#Search">Search</a></li>
       </ul>
     </nav>
-
-    <div>
-      <!--Quote section-->
-
-      <div class="row">
-        <div id="text"></div>
-        <div id="creator"></div>
-        <button id="btn" class="CLICK" onclick="getquote();">
-          Get my random quote
-        </button>
+    <article class="message is-primary">
+      <div class="message-header">
+        <p>SMILE!</p>
       </div>
-
+      <div class="message-body">
+        Energising each visitor with positivity to fuel the day ahead or reset the day!
+      </div>
+    </article>
+    <div>
+      
+      <!--Quote section-->
+      <section id="#Quote"></section>
+      <div class="container">
+        <div class="notification is-primary">
+          <div id="text"></div>
+          <div id="creator"></div>
+          <button
+            id="btn"
+            class="button is-warning is-outlined is-medium is-rounded"
+            onclick="getquote();"
+          >
+            Get my random quote
+          </button>
+        </div>
+      </div>
+    </section>
       <!--Wikipedia-->
+
+      <section id="#Search"></section>
       <div class="field">
-        <h2 class="label is-size-2 has-background-light">Wikipedia Search</h2>
-        <div class="control"></div>
+        <h2
+          class="
+            label
+            is-focused is-size-2
+            has-background-light has-text-centered
+          "
+        >
+          Wikipedia Search
+        </h2>
+        <div class="control">
           <input
-          
+            class="input is-success is-hovered"
             id="search-input"
             class="input"
             type="text"
             name="search"
             placeholder="Search.."
           />
-          <button class="button is-outlined is-medium is-rounded" id="search-form">Search</button>
         </div>
-        <div class="container">
-          <h2>Results</h2>
+        <button
+          class="button is-success is-outlined is-medium is-rounded"
+          id="search-form"
+        >
+          Search
+        </button>
+      </div>
+      <div class="container">
+        <div class="notification is-primary">
+          <h2><strong>Results</strong></h2>
           <h2 id="search"></h2>
           <div id="search-results"></div>
         </div>
       </div>
     </div>
-
+  </section>
     <script defer src="./assets/js/api.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </body>
